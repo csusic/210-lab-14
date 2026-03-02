@@ -11,16 +11,17 @@ private:
     int red, green, blue;
 public:
     int getRed() const      {return red;}      
-    void setRed();          
+    void setRed(int r)      {red = r;}   
     int getGreen() const    {return green;}      
-    void setGreen();        
+    void setGreen(int g)    {green = g;}  
     int getBlue() const     {return blue;}  
-    void setBlue();          
+    void setBlue(int b)     {blue = b;}  
     //print
     void print() {
-        cout << setw(W1) << "Red:" << red << endl;
-        cout << setw(W1) << "Green:" << green << endl;
-        cout << setw(W1) << "Blue:" << blue << endl;
+        cout << "Red: " << red << endl;
+        cout << "Green: " << green << endl;
+        cout << "Blue: " << blue << endl;
+        cout << endl;
     }
 };
 
